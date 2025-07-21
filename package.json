@@ -1,0 +1,37 @@
+{
+  "name": "squad-engineering",
+  "version": "1.0.0",
+  "description": "A pragmatic, agentic engineering framework built for Claude Code",
+  "keywords": [
+    "claude-code",
+    "llm",
+    "ai-engineering",
+    "squad-pattern",
+    "context-engineering"
+  ],
+  "author": "",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "validate": "node scripts/validate-commands.js",
+    "squad:analyze": "claude /analyze",
+    "squad:feature": "claude /define-feature",
+    "squad:evaluate": "claude /evaluate",
+    "squad:sync": "claude /sync-up"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/squad-engineering.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/squad-engineering/issues"
+  },
+  "homepage": "https://github.com/yourusername/squad-engineering#readme",
+  "devDependencies": {
+    "@anthropic-ai/claude-code": "latest"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
