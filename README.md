@@ -127,33 +127,6 @@ Your squad persists across features - you're not creating new agents each time, 
   <img src="assets/se-diagram.png" alt="Squad Engineering Workflow" width="600">
 </div>
 
-```mermaid
-flowchart TD
-  subgraph "One-Time Squad Setup"
-    A[🔍 /analyze<br>Project assessment] --> B[🛠 /generate-squad-role<br>Create persistent squad]
-  end
-  
-  subgraph "Per-Feature Loop"
-    C[📄 /define-feature<br>Create structured PRD] --> D[📋 /allocate-tasks<br>Distribute work to squad]
-    D --> E[🚧 /start-task<br>Squad members execute]
-    E --> F[🔁 /sync-up<br>Progress coordination]
-    F --> G[🧪 /evaluate<br>Quality review]
-    G --> H{Feature Complete?}
-    H -->|No| F
-    H -->|Yes| I[✅ Ship Feature]
-    I --> C
-  end
-  
-  B --> C
-
-  subgraph Environment
-    S1[Supervisor (Claude Opus)]
-    S2[Persistent Squad Agents (Claude Sonnet)]
-    S3[Each agent in separate terminal]
-    S4[MCP for evaluation & inspection]
-  end
-```
-
 This diagram shows:
 
 * **Initial Setup**: Squad is created once through analyze → generate-squad-role
