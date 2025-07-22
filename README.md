@@ -50,7 +50,7 @@ The framework treats LLMs not as a single omniscient coder, but as a team of spe
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/squad-engineering.git
+   git clone https://github.com/yahavf6/squad-engineering.git
    cd squad-engineering
    ```
 
@@ -249,27 +249,13 @@ claude /continue-task 1  # Pick up where agent left off
 See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on:
 - Creating new command types
 - Extending role templates
-- Improving squad communication protocols
+- Improving squad communication files
 - Adding example implementations
 
 ---
 
-## 📚 Learn More
+## 📚 Resources
 
 - [Claude Code Documentation](https://docs.anthropic.com/en/docs/claude-code/overview)
 - [Context Engineering Introduction](https://github.com/coleam00/context-engineering-intro)
 - [Model Context Protocol (MCP)](https://docs.anthropic.com/en/docs/mcp)
-
----
-
-## 📌 Coming Soon
-
-* `/handoff` – Agent-to-agent context transition
-* `/review` – Supervisor-led structured code review
-* `/mirror-human-teams` – Spawn squads from real team archetypes
-
----
-
-## 📄 License
-
-MIT License - See [LICENSE](LICENSE) file for details.
